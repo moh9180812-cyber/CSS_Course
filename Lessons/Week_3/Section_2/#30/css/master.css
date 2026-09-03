@@ -1,0 +1,21 @@
+/* 
+  Position
+  - Static => Default
+  - Relative
+  - Absolute
+  - Fixed
+  - Sticky
+*/
+
+body {
+    min-height: 5000px;
+}
+
+div {
+    color: white;
+    background-color: red;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+

@@ -1,0 +1,66 @@
+/* التكليف الاول */
+/* Any Element With Class Title */
+.title {
+}
+
+/* Any Element With Id nav */
+#nav {
+}
+
+/* Any div */
+div {
+}
+
+/* Any h2 */
+h2 {
+}
+
+/* التكليف الخامس */
+/* صالح */
+._user-name {
+}
+
+/* صالح */
+.-user-name {
+}
+
+/* غير صالح */
+.1user-name {
+}
+
+/* غير صالح */
+.@user-name {
+}
+
+/* غير صالح */
+.user@name {
+}
+
+/* صالح */
+._user10name {
+}
+
+/* صالح */
+.u {
+}
+
+/* التكليف السادس */
+/* Bad */
+.USERNAME {
+}
+
+/* Bad */
+.UserName {
+}
+
+/* Good */
+.user-name {
+}
+
+/* Bad */
+.userName {
+}
+
+/* Bad */
+.usernameprofile {
+}

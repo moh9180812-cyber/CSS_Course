@@ -1,0 +1,91 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    z-index: 1;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    font-weight: bolder;
+}
+
+div::before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-color: #eee;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -2;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 6px solid transparent;
+  border-top-color: rgb(0, 162, 255);
+  border-left-color: rgb(0, 162, 255);
+  border-bottom-color: rgb(0, 162, 255);
+  border-right-color: white;
+  transform: scale(1.06,1.06);
+  -webkit-transform: scale(1.06,1.06);
+  -moz-transform: scale(1.06,1.06);
+  -ms-transform: scale(1.06,1.06);
+  -o-transform: scale(1.06,1.06);
+  transition-duration: 0.5s;
+  transition-delay: 0.4s;
+}
+
+div::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -2;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 6px solid transparent;
+    border-top-color: rgb(232, 14, 119);
+    border-right-color: rgb(232, 14, 119);
+    border-bottom-color: rgb(232, 14, 119);
+    border-left-color: white;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+
+div:hover::after {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+
+div:hover::before {
+    transform: scale(1.06, 1.06) rotate(360deg) ;
+    -webkit-transform: scale(1.06, 1.06) rotate(360deg) ;
+    -moz-transform: scale(1.06, 1.06) rotate(360deg) ;
+    -ms-transform: scale(1.06, 1.06) rotate(360deg) ;
+    -o-transform: scale(1.06, 1.06) rotate(360deg) ;
+}

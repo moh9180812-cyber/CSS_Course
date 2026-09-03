@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+div {
+  width: 600px;
+  padding: 20px;
+  text-align: center;
+  background-color: #ccc;
+  margin-top: 100px;
+  position: relative;
+  border: 4px solid;
+  font-size: 30px;
+  border-image: linear-gradient( to right , red 20% , blue 20% , blue 40% , green 40% , green 60% , red 60% , red 80% , #673ab7 80%   ) 1 ;
+}
+
+div::first-letter {
+  color: red;
+}
+

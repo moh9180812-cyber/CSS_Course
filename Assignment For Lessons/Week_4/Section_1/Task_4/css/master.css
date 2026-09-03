@@ -1,0 +1,32 @@
+p {
+  width: 400px;
+  padding: 10px;
+  position: relative;
+  margin: 10px auto;
+  background-color: #eee;
+  counter-increment: element-counter;
+}
+
+p::before {
+    content: counter(element-counter);
+    position: absolute;
+    height: 38.29px;
+    width: 40px;
+    background-color: red;
+    color: white;
+    left: -40px;
+    top: 0px;
+    text-align: center;
+    align-content: center;
+}
+
+p::after {
+    content: "";
+    padding: 0px;
+    height: 38.29px;
+    background-color: red;
+    width: 4px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}

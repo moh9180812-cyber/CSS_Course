@@ -1,0 +1,20 @@
+div {
+    width: 400px;
+    height: 60px;
+    background-color: #eee;
+    font-weight: bold;
+    margin: 100px auto;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    text-indent: -60px;
+}
+
+div::first-letter {
+    background-color: red;
+    color: white;
+    padding: 10px 8px;
+    font-weight: bold;
+    margin-right: 10px;
+}

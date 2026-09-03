@@ -1,0 +1,54 @@
+:root {
+    --main-color: rgb(55, 196, 156);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    background-color: var(--main-color);
+    width: fit-content;
+    padding: 20px 20px;
+    color: white;   
+    margin: 100px auto;
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    width: 50px;
+    height: 100%;
+    top: 0;
+    left: -15px;
+    transform: skew(10deg);
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(10deg);
+    -ms-transform: skew(10deg);
+    -o-transform: skew(10deg);
+    z-index: -1;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    width: 20px;
+    height: 100%;
+    top: 0;
+    left: -40px;
+    transform: skew(10deg);
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(10deg);
+    -ms-transform: skew(10deg);
+    -o-transform: skew(10deg);
+    z-index: -1;
+}

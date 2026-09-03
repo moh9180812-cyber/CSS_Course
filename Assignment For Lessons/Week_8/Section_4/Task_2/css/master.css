@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.arrow {
+    width: 300px;
+    background-color: #ddd;
+    padding: 20px;
+    margin: 40px auto;
+    position: relative;
+}
+
+/* السهم العلوي */
+.top::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent #ddd transparent;
+}
+
+/* السهم اليمين */
+.right::before {
+    content: "";
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ddd;
+}
+
+/* السهم السفلي */
+.bottom::before {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 20px;
+    border-style: solid;
+    border-color: #ddd transparent transparent transparent;
+}
+
+/* السهم الشمال */
+.left::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent #ddd transparent transparent;
+}

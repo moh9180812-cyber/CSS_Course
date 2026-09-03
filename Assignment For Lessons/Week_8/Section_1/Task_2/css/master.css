@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(10, 10, 17);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-bottom-color: transparent;
+    position: relative;
+    
+}
+
+div,
+div::before,
+div::after{
+    animation: animate 1s linear infinite;
+    animation-play-state: paused;
+     animation-fill-mode: forwards;
+}
+
+div:hover{
+    animation:animate 1.3s linear infinite;
+    -webkit-animation:animate 1.3s linear infinite;
+    
+}
+
+div:hover::after{
+    animation:animate 1s linear infinite;
+    -webkit-animation:animate 1s linear infinite;
+    animation-delay: -0.2s;
+}
+
+div:hover::before{
+    animation:animate 1.6s linear infinite;
+    animation-delay: 0.4s;
+    -webkit-animation:animate 1.6s linear infinite;
+}
+
+div::after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        border: 3px solid rgb(49, 10, 246);
+        border-radius: 50%;
+        border-bottom-color: transparent;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        top: 7px;
+        left: 7px;
+}
+
+div::before {
+        content: "";
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        border-radius: 50%;
+        border: 3px solid orange;
+        border-bottom-color: transparent;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        top: 2px;
+        left: 2px;
+        animation-fill-mode: both;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }   
+    100% {
+        transform: rotate(360deg);
+    }
+}

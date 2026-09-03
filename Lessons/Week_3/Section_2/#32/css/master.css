@@ -1,0 +1,10 @@
+ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    list-style-image: url('');
+}
+
+li {
+    margin-bottom: 10px;
+    background-color: #eee;
+}

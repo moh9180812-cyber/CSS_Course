@@ -1,0 +1,22 @@
+div { 
+    width: 600px ;
+    padding: 20px ;
+    border: none ;
+    background-color: #eee ;
+    font-size: 20px ;
+    margin: 10px auto;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right , red 50% , green 50%) 1;
+}
+
+.one {
+    caret-color: red;
+}
+
+.one:focus {
+    outline: none;
+}
+
+.two , .three {
+    color: rgba(0, 0, 0, 0.578);
+}

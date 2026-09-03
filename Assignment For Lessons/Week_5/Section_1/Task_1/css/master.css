@@ -1,0 +1,39 @@
+
+
+.parent {
+  background: #eee;
+  text-align: center;
+  color: black;
+  width: 280px;
+  height: 150px;
+  margin: 100px auto;
+  position: relative;
+  padding: 20px;
+  text-transform: capitalize;
+  transition-duration: 0.5s;
+}
+
+.son {
+    background: #d7d5d5;
+    text-align: center;
+    color: black;
+    width: 260px;
+    padding: 10px;
+    position: absolute;
+    top: 40px;
+    text-transform: capitalize;
+    transition: top 0.5s 0.5s ease;
+    -webkit-transition: top 0.5s 0.5s ease;
+    -moz-transition: top 0.5s 0.5s ease;
+    -ms-transition: top 0.5s 0.5s ease;
+    -o-transition: top 0.5s 0.5s ease;
+    font-size: 15px;
+}
+
+.parent:hover {
+  margin-top: 80px;
+}
+
+.parent:hover .son {
+  top: 60px;
+}

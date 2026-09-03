@@ -1,0 +1,13 @@
+/* 
+  Text Color
+    background-color
+    Color
+  Text Shadow  
+   syntax => text-shadow: H-shadow V-shadow Blur Color
+*/
+
+div {
+  background-color: #f9f9f9;
+  color: rebeccapurple;
+  text-shadow: 1px 1px 1px red;
+}

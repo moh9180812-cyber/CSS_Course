@@ -1,0 +1,91 @@
+:root {
+    --main-color: rgb(255, 81, 0);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.one , .two {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.one {
+   background-color: var(--main-color);
+   position: absolute;
+   z-index: -1;
+}
+
+.one::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: var(--main-color);
+    transform: skewy(25deg);
+    -webkit-transform: skewy(25deg);
+    -moz-transform: skewy(25deg);
+    -ms-transform: skewy(25deg);
+    -o-transform: skewy(25deg);
+}
+
+.one::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: var(--main-color);
+    transform: skewy(-25deg);
+    -webkit-transform: skewy(-25deg);
+    -moz-transform: skewy(-25deg);
+    -ms-transform: skewy(-25deg);
+    -o-transform: skewy(-25deg);
+}
+
+.two {
+   background-color: var(--main-color);
+   color: white;
+   z-index: 1;
+   font-size: 40px;
+   font-weight: bolder;
+}
+
+.two::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    z-index: -1;
+    background-color: var(--main-color);
+    transform: skewx(25deg) rotate(15deg) scaleX(0.94);
+    -webkit-transform: skewx(25deg) rotate(15deg) scaleX(0.94);
+    -moz-transform: skewx(25deg) rotate(15deg) scaleX(0.94);
+    -ms-transform: skewx(25deg) rotate(15deg) scaleX(0.94);
+    -o-transform: skewx(25deg) rotate(15deg) scaleX(0.94);
+}
+
+.two::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    z-index: -2;
+    background-color: var(--main-color) ;
+    transform: skewx(-25deg) rotate(-15deg) scaleX(0.94);
+    -webkit-transform: skewx(-25deg) rotate(-15deg) scaleX(0.94);
+    -moz-transform: skewx(-25deg) rotate(-15deg) scaleX(0.94);
+    -ms-transform: skewx(-25deg) rotate(-15deg) scaleX(0.94);
+    -o-transform: skewx(-25deg) rotate(-15deg) scaleX(0.94);
+}
+

@@ -1,0 +1,9 @@
+div {
+    background-color: #ddd;
+    padding: 10px; /*It is not allowed to negative values*/
+    /*margin: 10px;*/ /*It is allowed to negative values*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: center;
+}

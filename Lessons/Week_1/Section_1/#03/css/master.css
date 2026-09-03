@@ -1,0 +1,9 @@
+/* Target All Paragraphs */
+
+p {
+    color: red;
+}
+
+.special {
+    color: green;
+}

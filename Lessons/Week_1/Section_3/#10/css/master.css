@@ -1,0 +1,7 @@
+div {
+    background-color: #ddd;
+    width: 300px;
+    padding: 10px;
+    border: 10px solid red;
+    outline: 10px solid blue; /*بس خارج العنصر border ده زي ال*/ /*من عيوبه اننا منقدرش نحدد ستايل كل اتجاه في االعنصر*/
+}

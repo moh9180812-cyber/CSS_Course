@@ -1,0 +1,11 @@
+div {
+    background-color: red;
+    padding: 10px;
+    /* display: inline-block; == width: fit-content */
+    /* width: zpx; */
+    /* min-width: zpx; */
+    /* max-width: zpx; */
+    /* height: zpx; */
+    /* min-height: zpx; */
+    /* max-height: zpx; */
+}

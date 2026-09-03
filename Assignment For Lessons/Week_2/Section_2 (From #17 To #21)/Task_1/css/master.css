@@ -1,0 +1,8 @@
+div {
+    background-color: #eee;
+    color: black;
+    text-transform: capitalize;
+    padding: 10px;
+    text-shadow: 0.5px 0.5px 0 red , 1px 1px 0 blue , 1.5px 1.5px 0 blueviolet;
+    font-family: system-ui;
+}

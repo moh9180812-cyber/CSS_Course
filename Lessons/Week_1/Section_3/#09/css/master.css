@@ -1,0 +1,10 @@
+div {
+    background-color: #ddd;
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    border-width: 10px;  /*بياخد اربع قيم*/
+    border-color: red green blue yellow; /*بياخد اربع قيم */
+    border-style: solid; /*بيحدد شكل الحافة الخاصه بالعنصر*/ /*بياخد اربع قيم */
+    border: 10px solid red; /*بيحدد الحافة الخاصه بالعنصر من حيث العرض والشكل واللون في سطر واحد*/;
+}

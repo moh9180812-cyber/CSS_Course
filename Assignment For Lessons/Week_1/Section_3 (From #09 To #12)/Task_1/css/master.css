@@ -1,0 +1,23 @@
+div {
+    background-color: #ddd;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    outline: 5px solid black;
+}
+
+.S-1 {
+    border: 5px solid red;
+}   
+
+.S-2 {
+    border-color: blue green;
+    border-width: 5px;
+    border-style: solid;
+}   
+
+.S-3 {
+    border-color: red green blue yellow;
+    border-width: 5px;
+    border-style: dashed;
+}   

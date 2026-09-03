@@ -1,0 +1,17 @@
+/* 
+  Font Style 
+  Font Variant
+  Font Weight
+*/
+/* 
+div {
+  font-variant: small-caps;
+}
+
+p {
+ text-transform: uppercase;
+} */
+
+div {
+  font-weight: bold;
+}
